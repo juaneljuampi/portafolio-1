@@ -1,12 +1,15 @@
+import logo from './logo.svg';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Hero from './components/Hero';
-
+import Home from './pages/home';
 function App() {
   return (
-    <>
-      <Hero />
-      {/* Aquí irán las demás secciones */}
-    </>
+    <router>
+      <router>
+        <route path="/" element={<Home />} />
+      </router>
+    </router>
+    
   );
 }
 
