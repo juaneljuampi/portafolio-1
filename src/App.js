@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './pages/home';
+import App from './pages/home';
 function App() {
   return (
     <router>
       <router>
-        <route path="/" element={<Home />} />
+        <route path="/" element={<App />} />
       </router>
     </router>
     
