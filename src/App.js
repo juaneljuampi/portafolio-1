@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Hero from './pages/Hero';
+import Home from './pages/home';
 function App() {
   return (
     <router>
       <router>
-        <route path="/" component={Hero} />
+        <route path="/" element={<Home />} />
       </router>
     </router>
+    
   );
 }
 
