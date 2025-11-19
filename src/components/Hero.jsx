@@ -11,17 +11,17 @@ const Hero = () => {
         <p>
           Estudiante de Ingeniería en Informática en Duoc UC. Apasionado por crear apps robustas, visualmente elegantes y listas para producción.
         </p>
-        <div className="hero-buttons">
+        <div className="hero-socials">
+          <a href="https://www.linkedin.com/in/juan-cortes-nunez" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin size={28} />
+          </a>
+          <a href="https://github.com/juaneljuampi" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={28} />
+          </a>
+                  <div className="hero-buttons">
           <a href="#projects" className="btn">Ver proyectos</a>
           <a href="#contact" className="btn btn-outline">Contáctame</a>
         </div>
-        <div className="hero-socials">
-          <a href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin size={28} />
-          </a>
-          <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer">
-            <FaGithub size={28} />
-          </a>
         </div>
       </div>
     </div>
