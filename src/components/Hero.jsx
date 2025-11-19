@@ -28,7 +28,7 @@ const Hero = () => {
             
           </p>
                 <div className="hero-buttons">
-          <a href="#projects" className="btn">Ver proyectos</a>
+          
           <button className="btn btn-outline" onClick={() => setShowModal(true)}>Contáctame</button>
         </div>
         </div>
