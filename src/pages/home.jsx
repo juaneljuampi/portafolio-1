@@ -1,12 +1,12 @@
-import Hero from './components/Hero';
+import Hero from '../components/Hero';
 
-function App() {
+function Home() {
   return (
     <>
       <Hero />
-      {/* Aquí irán las demás secciones */}
+      {/* Aquí puedes agregar más secciones como Proyectos, Contacto, etc. */}
     </>
   );
 }
 
-export default App;
+export default Home;
