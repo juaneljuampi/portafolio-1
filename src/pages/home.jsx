@@ -60,16 +60,7 @@ function Home() {
               docLink: 'https://github.com/juaneljuampi/quiz-ingles#readme',
               repoLink: 'https://github.com/juaneljuampi/quiz-ingles',
             },
-            {
-              id: 3,
-              title: 'Gestor de Productos',
-              desc: 'CRUD completo con React, Node.js y MySQL, desplegado en Railway con conexión funcional.',
-              images: [
-                `${process.env.PUBLIC_URL}/img/card.png`,
-              ],
-              docLink: 'https://github.com/juaneljuampi/gestor-productos#readme',
-              repoLink: 'https://github.com/juaneljuampi/gestor-productos',
-            },
+
           ].map((card) => (
             <article key={card.id} style={{
               border: '1px solid #e5e7eb',
@@ -111,7 +102,7 @@ function Home() {
                     onClick={() => openModal(card.images, card.title)}
                     style={{
                       padding: '0.5rem 1rem',
-                      fontSize: '0.9rem',
+                      fontSize: '1rem',
                       backgroundColor: '#00d8ff',
                       color: '#000',
                       border: 'none',
@@ -121,16 +112,6 @@ function Home() {
                   >
                     Ver imágenes
                   </button>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
 
                   <a
                     href={card.repoLink}
@@ -138,11 +119,14 @@ function Home() {
                     rel="noopener noreferrer"
                     style={{
                       padding: '0.5rem 1rem',
-                      fontSize: '0.9rem',
+                      fontSize: '1rem',
                       backgroundColor: '#00d8ff',
                       color: '#000',
                       borderRadius: '8px',
                       textDecoration: 'none',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      justifyContent: 'center'
                     }}
                   >
                     Ver repositorio
