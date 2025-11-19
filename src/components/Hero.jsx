@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Hero.css';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import ModalContact from './ModalContacto';
 
 const Hero = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div className="hero-container" id="hero">
       <div className="hero-content">
@@ -11,6 +14,9 @@ const Hero = () => {
         <p>
           Estudiante de Ingeniería en Informática en Duoc UC. Apasionado por crear apps robustas, visualmente elegantes y listas para producción.
         </p>
+
+
+
         <div className="hero-socials">
           <a href="https://www.linkedin.com/in/juan-cortes-nunez" target="_blank" rel="noopener noreferrer">
             <FaLinkedin size={28} />
@@ -18,12 +24,17 @@ const Hero = () => {
           <a href="https://github.com/juaneljuampi" target="_blank" rel="noopener noreferrer">
             <FaGithub size={28} />
           </a>
-                  <div className="hero-buttons">
+          <p>
+            
+          </p>
+                <div className="hero-buttons">
           <a href="#projects" className="btn">Ver proyectos</a>
-          <a href="#contact" className="btn btn-outline">Contáctame</a>
+          <button className="btn btn-outline" onClick={() => setShowModal(true)}>Contáctame</button>
         </div>
         </div>
       </div>
+
+      <ModalContact isOpen={showModal} onClose={() => setShowModal(false)} />
     </div>
   );
 };
